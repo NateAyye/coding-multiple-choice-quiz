@@ -1,18 +1,40 @@
 /* Font imported from google fonts to make it look more like a coding site */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;0,800;1,400&display=swap');
 
+/* Current reset for this project */
+
 :root {
   /* Added to support the default browsers dark theme */
   color-scheme: dark light;
 
   /* Site Wide font styling */
   font-family: 'JetBrains Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.25;
   /* Adding ligitures that turns 3 equal signs into 3 long lines etc. */
   font-variant-ligatures: contextual;
 }
+
+button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #5d2691;
+  cursor: pointer;
+  box-shadow: inset -2px -2px 8px #000c, inset 2px 2px 6px #fff6;
+}
+
+button:focus {
+  outline: 2px solid #8d4bcc;
+  box-shadow: inset -2px -2px 8px #000c, inset 2px 2px 6px #fff6,
+    0 0 5px #8e4bcccb;
+}
+
+button:active {
+  box-shadow: inset 2px 2px 8px #000c, inset -2px -2px 6px #fff6;
+}
+/* End of Current reset for this project */
 
 /*    CSS Reset     */
 /*  Resource: https://piccalil.li/blog/a-modern-css-reset/  */
@@ -41,7 +63,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
