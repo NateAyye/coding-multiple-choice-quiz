@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#highscores {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid var(--text-color);
+}
+
+td {
+  border-spacing: 1px;
+  border-top: 1px solid var(--text-color);
+}
+
+td:not(:last-of-type) {
+  border-right: 1px solid var(--text-color);
+}
+
+#data tr:nth-of-type(odd) {
+  background: #683092ad;
+}
+
+#data tr:nth-of-type(even) {
+  background: #b998d38a;
+}
