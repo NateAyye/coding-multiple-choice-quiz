@@ -44,10 +44,7 @@
       <section hidden id="question-page" class="content">
         <h2 id="question-title"></h2>
         <div id="answer-btns">
-          <button class="answer"></button>
-          <button class="answer"></button>
-          <button class="answer"></button>
-          <button class="answer"></button>
+          <ol id="answer-btns-list"></ol>
         </div>
         <div id="previous-result">
           <hr />
@@ -56,12 +53,11 @@
         </div>
       </section>
 
-      <section id="score-form" class="content">
+      <section hidden id="score-form" class="content">
         <form>
           <h3>🎉 All Finished! 🎉</h3>
           <br />
           <p>Final Score: <span id="final-score"></span></p>
-          <hr />
           <br />
           <label for="initials">Initials:</label>
           <input
