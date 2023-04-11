@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- Scripts  -->
+    <script src="assets/scripts/questions.js" defer></script>
     <script src="assets/scripts/app.js" defer></script>
 
     <title>Coding Multiple Choice Quiz</title>
@@ -48,8 +49,29 @@
           <button class="answer"></button>
           <button class="answer"></button>
         </div>
-        <hr />
-        <span id="previous-result"></span>
+        <div id="previous-result">
+          <hr />
+          <!-- Either Wrong or Correct -->
+          <span></span>
+        </div>
+      </section>
+
+      <section hidden id="score-form" class="content">
+        <form>
+          <h3>🎉 All Finished! 🎉</h3>
+          <br />
+          <p>Final Score: <span id="final-score"></span></p>
+          <hr />
+          <br />
+          <label for="initials">Initials:</label>
+          <input
+            id="initials"
+            name="initials"
+            type="text"
+            placeholder="initials"
+          />
+          <button id="score-submit-btn">Submit Score</button>
+        </form>
       </section>
     </main>
   </body>
