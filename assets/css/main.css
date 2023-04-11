@@ -40,3 +40,8 @@ main .content {
   flex-direction: column;
   align-items: center;
 }
+
+#error-span {
+  font-weight: 700;
+  color: red;
+}
