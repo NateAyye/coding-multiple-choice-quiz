@@ -1,3 +1,7 @@
+// A collection of questions gathered from a couple different sources
+// Mainly w3 schools HTML Quiz: https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML
+// Mainly w3 schools JavaScript Quiz: https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS
+
 const questions = [
   {
     id: 1,
